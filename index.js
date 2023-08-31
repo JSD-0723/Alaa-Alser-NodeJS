@@ -1,5 +1,5 @@
-const http = require('http');
-const fs = require('fs');
+import http from 'http'
+import fs from 'fs'
 
 const PORT = process.env.PORT || 3000;
 const LOG_FILE = 'requests.txt';
