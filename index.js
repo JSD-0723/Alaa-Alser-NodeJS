@@ -22,9 +22,8 @@ const server = http.createServer((req, res) => {
         res.writeHead(200, { 'Content-Type': 'text/plain' });
         res.end('Request made successfully');
     } catch (error) {
-        console.error('Error logging request:', error);
         res.writeHead(500, { 'Content-Type': 'text/plain' });
-        res.end('Internal Server Error');
+        res.end('Internal Server Error', error);
     }
 });
 
