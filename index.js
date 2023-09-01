@@ -1,7 +1,10 @@
 import http from 'http'
 import fs from 'fs'
+import 'dotenv/config'
+
 
 const PORT = process.env.PORT || 3000;
+
 const LOG_FILE = 'requests.txt';
 
 const server = http.createServer((req, res) => {
